@@ -2,6 +2,7 @@ import Home from ".././view/home";
 import menu from ".././view/menu";
 import about from ".././view/about";
 import contact from ".././view/contact";
+import motd from ".././view/motd";
 import menuImage from "./logo.png";
 
 function header() {
@@ -27,7 +28,7 @@ function header() {
           </a>
           <a
             className="mx-4 bg-red-200 hover:bg-pink-700 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-            href="/home"
+            href="/motd"
           >
             MOTD
           </a>

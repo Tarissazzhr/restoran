@@ -5,8 +5,9 @@ function about() {
   return (
     <div>
       <div className="bg-red-200 h-screen">
-        <div className="py-3 px-5 text-left" />
-        <p className="text-center text-3xl font-bold">About Us</p>
+        <div className="py-3 px-5 text-left">
+          <p className="text-center text-3xl font-bold">About Us</p>
+        </div>
         <hr className="mx-20 border-black" />
         <img src={menuImage} alt="" className="w-52 mt-10 mx-20" />
         <p className="text-center text-gray-400 pt-5"></p>
