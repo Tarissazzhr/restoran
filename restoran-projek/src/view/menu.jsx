@@ -22,6 +22,7 @@ import penutup2 from "./zpenutup2.jpg";
 import penutup3 from "./zpenutup3.jpg";
 import penutup4 from "./zpenutup4.jpg";
 import penutup5 from "./zpenutup5.jpg";
+
 function Menu() {
   const imageStyle = {
     width: "200px",
@@ -41,9 +42,15 @@ function Menu() {
           </button>
         </p>
         <div className="py-3 px-5 text-left">
-          <p className="text-4xl font-bold  text-center Asparagus">MENU</p>
+          <p className="text-4xl font-bold  text-center Asparagus">
+            RESTORANICH'S MENU
+          </p>
         </div>
-        <p> Temukan Seleramu! </p>
+        <p>
+          {" "}
+          Find everything from our Menu®, our always sizzling, and our famous
+          Bibimbap.{" "}
+        </p>
         <div className="text-center text-3xl font-bold ">
           <br />
           Makanan

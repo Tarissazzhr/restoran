@@ -11,7 +11,7 @@ function header() {
       <div className="flex justify-between items-center top-0 left-0 right-0 bottom-0 py-4 px-20 bg-red-800 mb-0 mt-0">
         <div className="flex items-center">
           <img src={menuImage} alt="menu" className="mt-5 w-16 " />
-          <a className=" text-white mt-5 ">RESTORANICH</a>
+          <a className=" text-white mt-5 Asparagus text-3xl">RESTORANICH</a>
         </div>
         <div className="inline-block text-red-800 mt-5 ">
           <a

@@ -1,9 +1,13 @@
 import React from "react";
 import makanan1 from "./xmakanan1.jpg";
-import makanan3 from "./xmakanan3.jpg";
-import makanan4 from "./xmakanan4.jpg";
-import minuman2 from "./yminuman2.jpg";
-import penutup3 from "./zpenutup3.jpg";
+import makanan2 from "./xmakanan3.jpg";
+import makanan3 from "./xmakanan9.jpg";
+import minuman1 from "./yminuman1.jpg";
+import minuman2 from "./yminuman6.jpg";
+import minuman3 from "./yminuman7.jpg";
+import penutup1 from "./zpenutup1.jpg";
+import penutup2 from "./zpenutup3.jpg";
+import penutup3 from "./zpenutup5.jpg";
 import paket1 from "./paket01.png";
 
 function Motd() {
@@ -70,13 +74,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 2</p>
             <br />
             <img
-              src={makanan4}
+              src={makanan2}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Spicy Bulgogi <br /> Rp.45.000
+              Kimchi Ramen <br /> Rp.25.000
             </p>
           </a>
           <a
@@ -92,14 +96,14 @@ function Motd() {
               className="rounded-lg"
             />
             <p className="text-center ">
-              Kimci Ramen <br /> Rp.25.000
+              Vegan Japchae <br /> Rp.25.000
             </p>
           </a>
         </div>
 
         <p className="text-3xl font-bold  text-center Asparagus py-5">
           {" "}
-          <u>Makanan</u>
+          <u>Minuman</u>
         </p>
 
         <div className="flex justify-center py-5">
@@ -110,13 +114,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 1</p>
             <br />
             <img
-              src={makanan1}
+              src={minuman1}
               alt=""
               style={imageStyle}
               className=" rounded-lg"
             />
             <p className="text-center">
-              Bibimbap <br /> Rp.25.000
+              Greentea Matcha Smoothie <br /> Rp.30.000
             </p>
           </a>
 
@@ -127,13 +131,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 2</p>
             <br />
             <img
-              src={makanan4}
+              src={minuman2}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Spicy Bulgogi <br /> Rp.45.000
+              Korean Strawberry Milk <br /> Rp.30.000
             </p>
           </a>
           <a
@@ -143,20 +147,20 @@ function Motd() {
             <p className="text-400 pt-5">Rank 3</p>
             <br />
             <img
-              src={makanan3}
+              src={minuman3}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Kimci Ramen <br /> Rp.25.000
+              Vanilla Chai Tea Latte <br /> Rp.30.000
             </p>
           </a>
         </div>
 
         <p className="text-3xl font-bold  text-center Asparagus py-5">
           {" "}
-          <u>Makanan</u>
+          <u>Hidangan Penutup</u>
         </p>
 
         <div className="flex justify-center py-5">
@@ -167,13 +171,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 1</p>
             <br />
             <img
-              src={makanan1}
+              src={penutup2}
               alt=""
               style={imageStyle}
               className=" rounded-lg"
             />
             <p className="text-center">
-              Bibimbap <br /> Rp.25.000
+              Strawberry Bingsu <br /> Rp.25.000
             </p>
           </a>
 
@@ -184,13 +188,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 2</p>
             <br />
             <img
-              src={makanan4}
+              src={penutup1}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Spicy Bulgogi <br /> Rp.45.000
+              Brownie pudding <br /> Rp.30.000
             </p>
           </a>
           <a
@@ -200,13 +204,13 @@ function Motd() {
             <p className="text-400 pt-5">Rank 3</p>
             <br />
             <img
-              src={makanan3}
+              src={penutup3}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Kimci Ramen <br /> Rp.25.000
+              Strawberry Shortcake <br /> Rp.35.000
             </p>
           </a>
         </div>
