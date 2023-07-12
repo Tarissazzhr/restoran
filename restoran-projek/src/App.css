@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.AdreenaScript-Demo {
+  font-family: AdreenaScript-Demo;
+}
 
 /* body {
   background-image: url(view/bagweb.jpg);
@@ -45,4 +48,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./view/Poppins-Regular.ttf);
+
+  font-family: Asparagus;
+  src: url(./view/AsparagusSprouts.ttf);
+}
+
+.Poppins {
+  font-family: Poppins;
+}
+
+.Asparagus {
+  font-family: Asparagus;
 }

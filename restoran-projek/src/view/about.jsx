@@ -1,30 +1,95 @@
 import React from "react";
-import menuImage from "./karinwin.jpg";
+import xresto1 from "./xresto1.jpg";
+import ceo from "./karwin.jpg";
 
 function about() {
   return (
     <div>
-      <div className="bg-red-200 h-screen">
-        <div className="py-3 px-5 text-left">
-          <p className="text-center text-3xl font-bold">About Us</p>
+      <div className="bg-gradient-to-r from-red-200 to-red-500">
+        <div className="py-20 px-20 text-left flex">
+          <img
+            src={xresto1}
+            alt="resto"
+            className="w-fit h-fit object-cover mx-2 rounded-lg"
+          />
+          <div className="pl-10">
+            <p className="text-3xl font-bold text-red-800 Asparagus">
+              RESTORANICH
+            </p>
+            <p className="text-400 pt-10 pb-20 text-justify">
+              Restoranich merupakan perusahaan swasta yang dibentuk oleh dua
+              orang pengusaha. Didirikan pada tanggal 25 Agustus 2020 berlokasi
+              di jalan Gangnam No. 14 Depok. Restoranich adalah destinasi
+              kuliner yang menyajikan pengalaman makan yang tak terlupakan. Dari
+              hidangan lezat hingga minuman segar, kami berkomitmen untuk
+              memberikan kepuasan maksimal kepada setiap tamu yang mengunjungi
+              restoran kami. Kami berkomitmen untuk menggunakan bahan-bahan
+              segar dan berkualitas tinggi dalam setiap hidangan kami. <br />
+              <br />
+            </p>
+          </div>
         </div>
-        <hr className="mx-20 border-black" />
-        <img src={menuImage} alt="" className="w-52 mt-10 mx-20" />
-        <p className="text-center text-gray-400 pt-5"></p>
+
+        <div className="py-20 px-20 text-left flex">
+          <div className="pr-10">
+            <p className="text-3xl font-bold text-red-800 Asparagus">
+              CEO of Restoranich
+            </p>
+            <p className="text-400 pt-10 pb-20 text-justify">
+              Tarissa dan Naura <br /> Merupakan CEO dari Restauranich berasal
+              dari Politeknik negeri Jakarta Jurusan teknik Informatika dan
+              Komputer Prodi Teknik Informatika yang sekarang masih dalam
+              pembelajaran Semester 2
+              <br />
+            </p>
+          </div>
+          <img
+            src={ceo}
+            alt="ceo"
+            className="w-fit h-fit object-cover mx-2 rounded-lg"
+          />
+        </div>
       </div>
 
-      <div className="py-4 px-11 bg-red-800 text-white text-center" id="foot">
-        <h1 className="text-3xl font-bold mb-3"> Contact Us</h1>
-        <p className="mb-3">You can reach us through the following channels:</p>
-        <ul className="list-disc ml-5">
-          <li>Email: contact@example.com</li>
-          <li>Phone: 123-456-7890</li>
-          <li>Address: 123 Main Street, City</li>
-        </ul>
-        &copy; {new Date().getFullYear()} RESTORANICH. All rights reserved.
+      <div className="py-5 px-20 bg-red-800 text-white text-left" id="foot">
+        <h1 className="text-2xl font-bold">
+          <u>Contact Us</u>
+        </h1>
+        <div className="flex items-center justify-between mb-3">
+          <div>
+            <p>Anda dapat menghubungi kami melalui media berikut:</p>
+            <ul className="list-disc ml-5">
+              <li>Email: RestoranichKorean@gmail.com</li>
+              <li>Phone: 0825-2016-2017</li>
+              <li>Address: Jl.Gangnam No.14, Depok, Indonesia</li>
+            </ul>
+            <br />
+          </div>
+
+          <div className="pl-10 mb-3">
+            <p>
+              {" "}
+              <i>Reservasi</i> <br /> Silahkan isi Form dibawah ini: <br />
+            </p>
+            <ul className="list-disc ml-5">
+              <br />
+              <li>
+                {" "}
+                <a
+                  className="bg-red-800 hover:bg-red-200 text-white hover:text-red-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                  href="https://forms.gle/7ra8TEFah4kRnDjQ6"
+                >
+                  Klik Ini!
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="text-center border-t pt-3">
+          &copy; {new Date().getFullYear()} RESTORANICH. All rights reserved.
+        </p>
       </div>
     </div>
   );
 }
-
 export default about;
