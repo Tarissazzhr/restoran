@@ -30,7 +30,7 @@ function header() {
             className="mx-4 bg-red-200 hover:bg-pink-700 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
             href="/motd"
           >
-            MOTD
+            Besmen
           </a>
           <a
             className="mx-4 bg-red-200 hover:bg-pink-700 font-bold py-2 px-4 rounded-lg transition-colors duration-300"

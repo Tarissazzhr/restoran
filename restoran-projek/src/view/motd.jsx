@@ -1,5 +1,7 @@
 import React from "react";
 import makanan1 from "./xmakanan1.jpg";
+import makanan3 from "./xmakanan3.jpg";
+import makanan4 from "./xmakanan4.jpg";
 import minuman2 from "./yminuman2.jpg";
 import penutup3 from "./zpenutup3.jpg";
 import paket1 from "./paket01.png";
@@ -33,26 +35,22 @@ function Motd() {
             className="ml-auto object-cover rounded-lg"
           />
         </div>
-
         <div className="pt-10 pb-3 px-5 text-left">
-          <p className="text-4xl font-bold  text-center Asparagus ">MOTD</p>
-        </div>
-        <div className="text-left px-24 py-5 ">
-          <p className="text-400s text-center mx-32 ">
-            Selamat datang di halaman menu kami! Lihatlah Menu of the day kami
-            yang penuh kelezatan dan variasi. Setiap hari kami menghadirkan
-            hidangan spesial yang dirancang khusus untuk memanjakan selera Anda.
+          <p className="text-4xl font-bold  text-center Asparagus ">
+            Best Seller of the Month
           </p>
         </div>
+        <p className="text-3xl font-bold  text-center Asparagus py-5">
+          {" "}
+          <u>Makanan</u>
+        </p>
 
         <div className="flex justify-center py-5">
           <a
             className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
             href="/menu"
           >
-            <p className="text-400 pt-5">
-              BEST SELLER <br /> MAKANAN
-            </p>
+            <p className="text-400 pt-5">Rank 1</p>
             <br />
             <img
               src={makanan1}
@@ -69,36 +67,146 @@ function Motd() {
             className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
             href="/menu"
           >
-            <p className="text-400 pt-5">
-              BEST SELLER <br /> MINUMAN
-            </p>
+            <p className="text-400 pt-5">Rank 2</p>
             <br />
             <img
-              src={minuman2}
+              src={makanan4}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Iced Americano <br /> Rp.20.000
+              Spicy Bulgogi <br /> Rp.45.000
             </p>
           </a>
           <a
             className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
             href="/menu"
           >
-            <p className="text-400 pt-5">
-              BEST SELLER <br /> MAKANAN PENUTUP
-            </p>
+            <p className="text-400 pt-5">Rank 3</p>
             <br />
             <img
-              src={penutup3}
+              src={makanan3}
               alt=""
               style={imageStyle}
               className="rounded-lg"
             />
             <p className="text-center ">
-              Strawberry Bingsu <br /> Rp.25.000
+              Kimci Ramen <br /> Rp.25.000
+            </p>
+          </a>
+        </div>
+
+        <p className="text-3xl font-bold  text-center Asparagus py-5">
+          {" "}
+          <u>Makanan</u>
+        </p>
+
+        <div className="flex justify-center py-5">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 1</p>
+            <br />
+            <img
+              src={makanan1}
+              alt=""
+              style={imageStyle}
+              className=" rounded-lg"
+            />
+            <p className="text-center">
+              Bibimbap <br /> Rp.25.000
+            </p>
+          </a>
+
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 2</p>
+            <br />
+            <img
+              src={makanan4}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <p className="text-center ">
+              Spicy Bulgogi <br /> Rp.45.000
+            </p>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 3</p>
+            <br />
+            <img
+              src={makanan3}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <p className="text-center ">
+              Kimci Ramen <br /> Rp.25.000
+            </p>
+          </a>
+        </div>
+
+        <p className="text-3xl font-bold  text-center Asparagus py-5">
+          {" "}
+          <u>Makanan</u>
+        </p>
+
+        <div className="flex justify-center py-5">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 1</p>
+            <br />
+            <img
+              src={makanan1}
+              alt=""
+              style={imageStyle}
+              className=" rounded-lg"
+            />
+            <p className="text-center">
+              Bibimbap <br /> Rp.25.000
+            </p>
+          </a>
+
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 2</p>
+            <br />
+            <img
+              src={makanan4}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <p className="text-center ">
+              Spicy Bulgogi <br /> Rp.45.000
+            </p>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <p className="text-400 pt-5">Rank 3</p>
+            <br />
+            <img
+              src={makanan3}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <p className="text-center ">
+              Kimci Ramen <br /> Rp.25.000
             </p>
           </a>
         </div>
@@ -129,7 +237,7 @@ function Motd() {
               <li>
                 {" "}
                 <a
-                  className="bg-red-200 hover:bg-red-800 text-white hover:text-red-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                  className="bg-red-800 hover:bg-red-200 text-white hover:text-red-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
                   href="https://forms.gle/7ra8TEFah4kRnDjQ6"
                 >
                   Klik Ini!
@@ -145,4 +253,5 @@ function Motd() {
     </div>
   );
 }
+
 export default Motd;
