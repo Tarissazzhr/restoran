@@ -3,19 +3,27 @@ import xresto1 from "./xresto1.jpg";
 import ceo from "./karwin.jpg";
 
 function about() {
+  const goBack = () => {
+    window.history.back();
+  };
+
   return (
     <div>
-      <div className="bg-gradient-to-r from-red-200 to-red-500">
-        <div className="py-20 px-20 text-left flex">
+      <div className="bg-gradient-to-r from-red-500 to-red-200">
+        <p className="pt-5 py-0 px-28 text-left">
+          <button onClick={goBack} className="mr-2">
+            &#x2190; Kembali
+          </button>
+        </p>
+
+        <div className="py-10 px-20 text-left flex">
           <img
             src={xresto1}
             alt="resto"
             className="w-fit h-fit object-cover mx-2 rounded-lg"
           />
           <div className="pl-10">
-            <p className="text-3xl font-bold text-red-800 Asparagus">
-              RESTORANICH
-            </p>
+            <p className="text-3xl font-bold   Asparagus">RESTORANICH</p>
             <p className="text-400 pt-10 pb-20 text-justify">
               Restoranich merupakan perusahaan swasta yang dibentuk oleh dua
               orang pengusaha. Didirikan pada tanggal 25 Agustus 2020 berlokasi
@@ -29,12 +37,9 @@ function about() {
             </p>
           </div>
         </div>
-
         <div className="py-20 px-20 text-left flex">
           <div className="pr-10">
-            <p className="text-3xl font-bold text-red-800 Asparagus">
-              CEO of Restoranich
-            </p>
+            <p className="text-3xl font-bold Asparagus">CEO of Restoranich</p>
             <p className="text-400 pt-10 pb-20 text-justify">
               Tarissa dan Naura <br /> Merupakan CEO dari Restauranich berasal
               dari Politeknik negeri Jakarta Jurusan teknik Informatika dan

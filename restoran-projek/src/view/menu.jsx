@@ -28,354 +28,364 @@ function Menu() {
     height: "200px",
     objectFit: "cover",
   };
+  const goBack = () => {
+    window.history.back();
+  };
 
   return (
     <div className="bg-gradient-to-r from-red-500 to-red-200">
-      <div className="py-3 px-5 text-left">
-        <p className="text-4xl font-bold  text-center Asparagus">MENU</p>
-      </div>
-      <hr className="mx-20 border-black" />
-      <div className="text-center text-3xl font-bold ">
-        <br />
-        Makanan
-      </div>
+      <div className="px-20">
+        <p className="pt-5 py-0 text-left">
+          <button onClick={goBack} className="mr-2">
+            &#x2190; Kembali
+          </button>
+        </p>
+        <div className="py-3 px-5 text-left">
+          <p className="text-4xl font-bold  text-center Asparagus">MENU</p>
+        </div>
+        <p> Temukan Seleramu! </p>
+        <div className="text-center text-3xl font-bold ">
+          <br />
+          Makanan
+        </div>
 
-      <div className="flex justify-center py-5 ">
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan1}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Bibimbap <br /> Rp.25.000
-          </div>{" "}
-        </a>
+        <div className="flex justify-center py-5 ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan1}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Bibimbap <br /> Rp.25.000
+            </div>{" "}
+          </a>
 
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan2}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center">
-            Budae Jjigae <br /> Rp.35.000
-          </div>
-        </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan2}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center">
+              Budae Jjigae <br /> Rp.35.000
+            </div>
+          </a>
 
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan3}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan3}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              {" "}
+              Kimchi Ramen <br /> Rp.25.000{" "}
+            </div>
+          </a>
+
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan4}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Korean Bulgogi Sauce <br /> Rp.45.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan5}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Kimbap <br /> Rp.20.000
+            </div>
+          </a>
+        </div>
+
+        <div className="flex justify-center py-5 ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
             {" "}
-            Kimchi Ramen <br /> Rp.25.000{" "}
-          </div>
-        </a>
+            <img
+              src={makanan6}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center  ">
+              Spicy Beef Bulgogi <br /> Rp.55.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan7}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Tteokbokki <br /> Rp.25.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan8}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Vegan Bulgogi Mandu <br /> Rp.35.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan9}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Vegan Japchae <br /> Rp.25.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={makanan10}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Yukgaejang <br /> Rp.35.000
+            </div>
+          </a>
+        </div>
 
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan4}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Korean Bulgogi Sauce <br /> Rp.45.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan5}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Kimbap <br /> Rp.20.000
-          </div>
-        </a>
-      </div>
+        <div className="text-center text-3xl font-bold ">
+          <br />
+          Minuman
+        </div>
 
-      <div className="flex justify-center py-5 ">
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          {" "}
-          <img
-            src={makanan6}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center  ">
-            Spicy Beef Bulgogi <br /> Rp.55.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan7}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Tteokbokki <br /> Rp.25.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan8}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Vegan Bulgogi Mandu <br /> Rp.35.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan9}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Vegan Japchae <br /> Rp.25.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={makanan10}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Yukgaejang <br /> Rp.35.000
-          </div>
-        </a>
-      </div>
+        <div className="flex justify-center py-5 ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman1}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Green Tea Matcha Smoothie <br /> Rp.30.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman2}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Iced Americano <br /> Rp.20.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman3}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Iced Caramel Macchiato <br /> Rp.25.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman4}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Iced Matcha Latte <br /> Rp.30.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman5}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Korean Banana Milk <br /> Rp.25.000
+            </div>
+          </a>
+        </div>
 
-      <div className="text-center text-3xl font-bold ">
-        <br />
-        Minuman
-      </div>
+        <div className="flex justify-center py-5 ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman6}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Korean Strawberry Milk <br /> Rp.30.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={minuman7}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Vanilla Chai Tea Latte <br /> Rp.30.000
+            </div>
+          </a>
+        </div>
 
-      <div className="flex justify-center py-5 ">
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman1}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Green Tea Matcha Smoothie <br /> Rp.30.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman2}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Iced Americano <br /> Rp.20.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman3}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Iced Caramel Macchiato <br /> Rp.25.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman4}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Iced Matcha Latte <br /> Rp.30.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman5}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Korean Banana Milk <br /> Rp.25.000
-          </div>
-        </a>
-      </div>
+        <p className="text-center text-3xl font-bold">
+          <br />
+          Makanan Penutup
+        </p>
 
-      <div className="flex justify-center py-5 ">
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman6}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Korean Strawberry Milk <br /> Rp.30.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={minuman7}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Vanilla Chai Tea Latte <br /> Rp.30.000
-          </div>
-        </a>
-      </div>
-
-      <p className="text-center text-3xl font-bold">
-        <br />
-        Makanan Penutup
-      </p>
-
-      <div className="flex justify-center py-5 ">
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={penutup1}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Brownie Pudding <br /> Rp.30.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={penutup2}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Kkwabaegi <br /> Rp.25.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={penutup3}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Strawberry Bingsu <br /> Rp.25.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={penutup4}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Hotteok <br /> Rp.20.000
-          </div>
-        </a>
-        <a
-          className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
-          href="/menu"
-        >
-          <img
-            src={penutup5}
-            alt=""
-            style={imageStyle}
-            className="rounded-lg"
-          />
-          <div className="text-center ">
-            Strawberry Shortcake Triffle <br /> Rp.35.000
-          </div>
-        </a>
+        <div className="flex justify-center py-5 ">
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={penutup1}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Brownie Pudding <br /> Rp.30.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={penutup2}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Kkwabaegi <br /> Rp.25.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={penutup3}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Strawberry Bingsu <br /> Rp.25.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={penutup4}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Hotteok <br /> Rp.20.000
+            </div>
+          </a>
+          <a
+            className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
+            href="/menu"
+          >
+            <img
+              src={penutup5}
+              alt=""
+              style={imageStyle}
+              className="rounded-lg"
+            />
+            <div className="text-center ">
+              Strawberry Shortcake Triffle <br /> Rp.35.000
+            </div>
+          </a>
+        </div>
       </div>
 
       <div className="py-5 px-20 bg-red-800 text-white text-left" id="foot">

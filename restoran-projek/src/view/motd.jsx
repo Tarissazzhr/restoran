@@ -2,6 +2,7 @@ import React from "react";
 import makanan1 from "./xmakanan1.jpg";
 import minuman2 from "./yminuman2.jpg";
 import penutup3 from "./zpenutup3.jpg";
+import paket1 from "./paket01.png";
 
 function Motd() {
   const imageStyle = {
@@ -9,26 +10,38 @@ function Motd() {
     height: "200px",
     objectFit: "cover",
   };
+  const goBack = () => {
+    window.history.back();
+  };
 
   return (
     <div>
       <div className="bg-gradient-to-r from-red-500 to-red-200">
-        <div className="py-3 px-5 text-left">
+        <div className="pt-5 px-28 text-left flex bg-gradient-to-r from-red-200 to-red-500 ">
+          <p>
+            <button onClick={goBack} className="mr-2">
+              &#x2190; Kembali
+            </button>
+          </p>{" "}
+          <br />
+          <p className="py-20 text-6xl Asparagus">
+            Nikmati Menu <br /> Pilihan Terbaik!
+          </p>
+          <img
+            src={paket1}
+            alt="paket1"
+            className="ml-auto object-cover rounded-lg"
+          />
+        </div>
+
+        <div className="pt-10 pb-3 px-5 text-left">
           <p className="text-4xl font-bold  text-center Asparagus ">MOTD</p>
         </div>
-        <hr className="mx-20 border-black" />
-        <div className="text-left px-20 py-5 ">
-          <p className="text-400 pt-5 text-center mx-32 ">
+        <div className="text-left px-24 py-5 ">
+          <p className="text-400s text-center mx-32 ">
             Selamat datang di halaman menu kami! Lihatlah Menu of the day kami
             yang penuh kelezatan dan variasi. Setiap hari kami menghadirkan
             hidangan spesial yang dirancang khusus untuk memanjakan selera Anda.
-          </p>
-          <p className="text-400 pt-5 text-center mx-32">
-            Temukan Menu of the day kami yang menggoda di halaman ini.
-            Hidangan-hidangan pilihan kami dirancang untuk memuaskan berbagai
-            selera dan keinginan. Dari hidangan laut yang segar hingga hidangan
-            daging yang menggugah selera, ada sesuatu untuk setiap pencinta
-            makanan di sini.
           </p>
         </div>
 
@@ -41,7 +54,6 @@ function Motd() {
               BEST SELLER <br /> MAKANAN
             </p>
             <br />
-
             <img
               src={makanan1}
               alt=""
@@ -52,6 +64,7 @@ function Motd() {
               Bibimbap <br /> Rp.25.000
             </p>
           </a>
+
           <a
             className="mr-5 ml-5 w-52 rounded-lg flex items-center flex-col  mx-4 bg-red-300 hover:bg-red-800  text-black hover:text-white font-semibold py-2 px-4 max-w-max transition-colors duration-300"
             href="/menu"
@@ -116,7 +129,7 @@ function Motd() {
               <li>
                 {" "}
                 <a
-                  className="bg-red-800 hover:bg-red-200 text-white hover:text-red-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                  className="bg-red-200 hover:bg-red-800 text-white hover:text-red-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300"
                   href="https://forms.gle/7ra8TEFah4kRnDjQ6"
                 >
                   Klik Ini!
